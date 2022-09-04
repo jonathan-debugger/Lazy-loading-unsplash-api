@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web site created using create-snowpack-app"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>Proyecto lazy loading api Unsplash</title>
+  </head>
+  <body>
+    <div class="py-10 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <p
+          class="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase"
+        >
+          Manipulación dom
+        </p>
+        <h3
+          class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
+        >
+        Lazy loading Unsplash Api
+        </h3>
+        <p class="mt-4">✨✨</p>
+        <p class="mt-4">
+          Plugin en vanilla JavaScript para cargar imágenes con lazy load.
+        </p>
+        <p class="mt-4">✨✨</p>
+        <div class="mt-8 flex flex-col items-center" id="todo">
+            <div class="mt-2" id="container_search">
+                  <div class="mt-4 flex flex-row items-center">
+                      <label class="" >
+                          <span class="block mb-4 "> Agrega imagen por palabra o frase: </span>
+                          <input placeholder="Escribe una palabra" id="search" required 
+                            class="search placeholder:italic placeholder:text-slate-400 block bg-white
+                                  w-full border border-slate-300 rounded-md py-2 pl-4 pr-3 shadow-sm
+                                  focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 
+                                  sm:text-sm"  type="text" />
+                          <button id="btn_search" type="submit" aria-required="true" class="bg-blue-500 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Agregar</button>
+                      </label>
+                    </div>
+                  </div>
+            <div class="mt-4 flex flex-col items-center">
+                <p class="mt-4 mb-2  text-neutral-800">Agrega nueva imagen aleatoria.</p>
+                <button class="mb-2 bg-blue-500  hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" id="agregar">Agregar</button>
+                <button class="mb-8 text-pink-600 font-bold underline underline-offset-1" id="limpiar" class="text-blue-700">Limpiar</button>
+            </div>
+        </div>
+        <div class="flex flex-col items-center justify-center" id="imagenes"></div>
+      </div>
+    </div>
+
+    <!-- Add more scripts here -->
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
