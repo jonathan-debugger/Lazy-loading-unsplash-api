@@ -64,7 +64,7 @@ async function addImage(){
 async function searchImages(e) {
     //Tomamos el valor de el input quitandole los espacios en blanco de ambos extremos
     const query = document.querySelector('input#search').value.trim();
-    const url = urlShearchApi(query);
+    const url = (query=='')? 'cat' : urlShearchApi(query);
     const data = await fetchData(url);
     let randomNum = Math.floor((Math.random() * (data.results.length-1 - 0 + 1)) + 0); // numero aleatorio para seleccionar cualquier imagen de la lista
 
